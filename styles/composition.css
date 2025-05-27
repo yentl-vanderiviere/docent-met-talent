@@ -2,4 +2,6 @@ body {
   max-width: 75ch;
   margin-inline: auto;
   padding: var(--space-2xs);
+  overflow-x: hidden;
+  overflow-y: auto;
 }
