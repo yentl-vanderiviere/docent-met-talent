@@ -10,7 +10,7 @@
   left: 0;
 
   background-color: #e5e5f7;
-  opacity: 0.33;
+  opacity: 0.2;
   background-size: var(--space-m) var(--space-xl);
   background-image: repeating-linear-gradient(
     0deg,
@@ -23,16 +23,22 @@
   z-index: -9;
 }
 
+@media (max-width: 768px) {
+  .background {
+    opacity: 0.1;
+  }
+}
+
 @media (min-width: 1080px) {
   .background::after {
     content: "";
     position: absolute;
     top: 0;
     left: var(--space-3xl);
-    width: 1px;
+    width: 2px;
     height: 100%;
     background: #ff6467;
-    opacity: 0.67;
+    opacity: 1;
     pointer-events: none;
     z-index: -8;
   }
@@ -43,8 +49,8 @@
   position: fixed;
   top: var(--space-m);
   left: var(--space-s);
-  opacity: 1;
-  z-index: -7;
+  opacity: 1 !important;
+  z-index: -1;
   transform: rotate(-45deg);
   width: var(--step-4);
   height: 0.2rem;
