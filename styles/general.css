@@ -1,0 +1,51 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: var(--clr-slate-700);
+}
+
+h1,
+h2,
+.tagline,
+h3 {
+  font-family: var(--ff-display);
+  font-weight: 400;
+  font-style: normal;
+
+  color: var(--clr-slate-700);
+}
+
+h1 {
+  font-size: var(--step-4);
+  text-align: center;
+  margin-block-start: var(--space-m);
+  line-height: 1.25;
+}
+
+h2,
+.tagline {
+  font-size: var(--step-2);
+  margin-block: var(--space-s);
+  color: var(--clr-teal-500);
+}
+
+.tagline {
+  text-align: center;
+}
+
+h3 {
+  font-size: var(--step-1);
+  margin-block-start: var(--space-l);
+  margin-block-end: var(--space-xs);
+}
+
+.greeting {
+  font-family: var(--ff-display);
+  font-size: var(--step-1);
+}
+
+p {
+  /* margin-block-start: var(--space-xs); */
+  line-height: var(--step-5);
+  font-size: var(--step-0);
+}
